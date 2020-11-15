@@ -29,7 +29,7 @@ module.exports = class McSkinCommand extends commando.Command {
 
 	async run(msg, args) {
         const kadi = args.msg;
-        var embed = new RichEmbed()
+        var embed = new RichEmbed(23)
         .setTitle(`**${kadi}** adlı kullanıcının skini:`)
         .setImage(`https://minotar.net/armor/body/${kadi}/300.png`)
         .setFooter(`${msg.author.tag} tarafından istendi.`, msg.author.avatarURL)
